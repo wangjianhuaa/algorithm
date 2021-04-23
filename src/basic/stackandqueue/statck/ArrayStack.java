@@ -7,6 +7,7 @@ import java.util.Iterator;
  * @author wangjianhua
  * @date 2021-04-23 16:53
  */
+@SuppressWarnings("unchecked")
 public class ArrayStack<Item> implements MyStack<Item> {
     /**
      *
