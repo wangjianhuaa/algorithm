@@ -8,6 +8,15 @@ package basic.dynamicprogramming;
  */
 public class ClimbingStairs {
     public static void main(String[] args) {
+        //1
+        System.out.println(climbStairs(1));
+        //11    2
+        System.out.println(climbStairs(2));
+        //111  12  21
+        System.out.println(climbStairs(3));
+        //112 22 1111 121 211
+        System.out.println(climbStairs(4));
+        //1112 122 212 1121 221 11111 1211 2111
         System.out.println(climbStairs(5));
     }
 

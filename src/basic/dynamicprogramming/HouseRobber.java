@@ -17,8 +17,6 @@ public class HouseRobber {
         Scanner sc = new Scanner(System.in);
         System.out.print("输入住户数量：");
         int num = sc.nextInt();
-
-
         int [] nums = new int[num];
         Arrays.fill(nums, 1);
         int i =  rob(nums);
@@ -29,10 +27,16 @@ public class HouseRobber {
 
         int pre2 = 0,pre1 = 0;
         for (int i = 0; i < nums.length; i++) {
-            int cur = Math.max(pre2+nums[i],pre1);
+            System.out.print("住户数:"+(i+1)+";");
+            System.out.print("pre1="+pre1+"pre2="+pre2+";");
+            int cur = Math.max(pre1,pre2+nums[i]);
+            System.out.print("找出pre1和pre2+"+nums[i]+"的最大值;");
             pre2 = pre1;
             pre1 = cur;
+            System.out.print("抢劫的用户="+pre1+";     ");
+            System.out.println("保留到下次的pre1:"+pre1+"pre2:"+pre2);
         }
+
         return pre1;
     }
 }
