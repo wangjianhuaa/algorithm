@@ -9,3 +9,4 @@ out
 gen
 out/production/algorithm/origintest/StringEqualsTest.class
 src/origintest/StringEqualsTest.java
+*.class
