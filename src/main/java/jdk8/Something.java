@@ -10,4 +10,8 @@ public class Something {
     public String startsWith(String s){
         return String.valueOf(s.charAt(0));
     }
+
+    public static  String test1(){
+        return "test1";
+    }
 }
